@@ -1,0 +1,1 @@
+When running the notebook, the created model weights will be stored here.
