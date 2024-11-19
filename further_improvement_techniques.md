@@ -16,11 +16,11 @@ The main ideas to follow here are:
 ## Comparison of previous FTT with new versions using different backends: 
 Average of model result over 15 fits with different seeds
 
-![alt text](img\improvement_ftt_1.png)
+![Alt text](Img/improvement_ftt_1.png)
 
 Average results over 3 ensembles consisting of each 5 rebalanced models
 
-![alt text](img\improvement_ftt_2.png)
+![alt text](Img/improvement_ftt_2.png)
 
 * The number of trainable parameters is slightly less than in my previous paper because I didn't include an OOV token ("Out-Of-Vocabulary") in the Cat_Embedding Layer in the new implementation. We had 2 categorical features and the embedding dimension (emb_dim) is 32. Therefore, the new number of trainable parameters should be 64 less than the old one, which is 27,069 instead of 27,133 in the paper.
 * Compared to the TensorFlow implementation in my previous paper, the model fits twice as fast in Keras 3 with Torch and more than ten times faster when using Keras 3 with TensorFlow or JAX. While all new models perform better, the performance of the ensemble models is significantly better in the case of JAX.
@@ -29,11 +29,11 @@ Average results over 3 ensembles consisting of each 5 rebalanced models
 ## Comparison of previous LocalGLMftt with new versions using different backends: 
 Average of model result over 15 fits with different seeds
 
-![alt text](img\improvement_localGLMftt_1.png)
+![alt text](Img/improvement_localGLMftt_1.png)
 
 Average results over 3 ensembles consisting of each 5 rebalanced models
 
-![alt text](img\improvement_localGLMftt_2.png)
+![alt text](Img/improvement_localGLMftt_2.png)
 
 * The number of trainable parameters is slightly less than in my previous paper because:
     * I didn't include an OOV token ("Out-Of-Vocabulary") in the Cat_Embedding Layer in the new implementation. We had 2 categorical features and the embedding dimension (emb_dim) is 32. Therefore, the new number of trainable parameters should be 64 less than the old one.
